@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - AI Bookmark Manager Pro</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            color: #1a1a1a;
+            background-color: #ffffff;
+        }
+        .container {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #1a1a1a;
+            border-bottom: 2px solid #4171f5;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #2c2c2c;
+            margin-top: 35px;
+            font-size: 1.5em;
+        }
+        h3 {
+            color: #404040;
+            margin-top: 25px;
+            font-size: 1.2em;
+        }
+        .last-updated {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+        .section {
+            margin-bottom: 35px;
+        }
+        p, ul {
+            color: #333;
+            margin-bottom: 15px;
+        }
+        ul {
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .emphasis {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-left: 4px solid #4171f5;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy for AI Bookmark Manager Pro</h1>
+        <p class="last-updated">Effective Date: December 24, 2024</p>
+
+        <div class="section">
+            <h2>Overview</h2>
+            <p>AI Bookmark Manager Pro is committed to protecting your privacy while providing efficient bookmark management capabilities. This privacy policy explains our data practices, focusing on what information we collect, why we collect it, and how it is used to provide our service.</p>
+            
+            <div class="emphasis">
+                <p>Important Note: All user data is stored EXCLUSIVELY in Chrome's local storage on your device. We do not maintain any external servers, databases, or cloud storage. We do not collect, transmit, or store any user data on our systems. The only data storage occurs within your Chrome browser's built-in storage mechanisms.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Data Collection and Storage</h2>
+            
+            <h3>Essential Data Collection</h3>
+            <p>To provide bookmark management functionality, we collect and store the following data locally:</p>
+            <ul>
+                <li>Bookmark URLs and titles</li>
+                <li>User-created folder structures and tags</li>
+                <li>Page metadata (descriptions and favicons)</li>
+                <li>User-provided notes and annotations</li>
+                <li>AI-generated page summaries</li>
+                <li>Creation and modification timestamps</li>
+            </ul>
+
+            <h3>Storage Methods</h3>
+            <p>Data Storage Location and Methods:</p>
+            <ul>
+                <li>Chrome's Local Storage: Primary storage for bookmark data, which remains exclusively on your device</li>
+                <li>Chrome's Sync Storage: Optional synchronization across your devices (entirely user-controlled and managed through Chrome's built-in sync infrastructure)</li>
+            </ul>
+            
+            <p>Important Technical Details:</p>
+            <ul>
+                <li>All data operations (creating, reading, updating, deleting) occur directly in your browser</li>
+                <li>No data is ever transmitted to our servers</li>
+                <li>No external databases are used</li>
+                <li>No user analytics or tracking is implemented</li>
+                <li>No cookies are used for data storage</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Data Usage and Processing</h2>
+            <h3>Detailed Technical Implementation</h3>
+            <p>For complete transparency, here are the specific data elements we store and process:</p>
+            
+            <h4>1. Bookmark Data Structure</h4>
+            <ul>
+                <li>URL of the bookmarked page</li>
+                <li>Page title and custom bookmark name (if provided)</li>
+                <li>Folder organization information</li>
+                <li>User-assigned tags for categorization</li>
+                <li>Personal notes and annotations</li>
+                <li>Creation and modification timestamps</li>
+                <li>First 1000 characters of page content (stored locally only)</li>
+                <li>Meta descriptions from the webpage</li>
+            </ul>
+
+            <h4>2. Storage Implementation</h4>
+            <ul>
+                <li>Chrome's Local Storage:
+                    <ul>
+                        <li>Primary data storage using chrome.storage.local API</li>
+                        <li>Structured folder-based organization</li>
+                        <li>Automatic data cleanup on bookmark deletion</li>
+                        <li>No persistent cookies or cached data</li>
+                    </ul>
+                </li>
+                <li>Chrome's Sync Storage (Optional):
+                    <ul>
+                        <li>Limited to 8KB per item for cross-device synchronization</li>
+                        <li>Only essential bookmark data is synced</li>
+                        <li>Sync can be disabled at any time</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h4>3. Data Processing Operations</h4>
+            <p>The extension performs these specific operations with your data:</p>
+            <ul>
+                <li>Page Content Processing:
+                    <ul>
+                        <li>Extracts page title, meta description, and limited content</li>
+                        <li>Generates AI summaries for better organization</li>
+                        <li>Processes page content strictly within the browser</li>
+                    </ul>
+                </li>
+                <li>Search and Organization:
+                    <ul>
+                        <li>Enables full-text search across stored bookmarks</li>
+                        <li>Provides folder and tag-based organization</li>
+                        <li>All search operations occur locally</li>
+                    </ul>
+                </li>
+                <li>Data Export:
+                    <ul>
+                        <li>Allows complete data export in JSON format</li>
+                        <li>Export includes all user-created content</li>
+                        <li>Export function runs entirely client-side</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Data Sharing and Third-Party Services</h2>
+            <p>External Service Usage (Limited to Essential Functions Only):</p>
+            <ul>
+                <li>AI Service: Used solely for generating page summaries. Only the page content you choose to bookmark is sent to this service, and no personal data or browsing history is shared.</li>
+                <li>Google Chrome APIs: Used exclusively for local storage and synchronization through Chrome's built-in features. We use:
+                    <ul>
+                        <li>chrome.storage.local: For storing bookmarks on your device</li>
+                        <li>chrome.storage.sync: For optional Chrome sync features</li>
+                        <li>chrome.tabs: For reading current tab information when bookmarking</li>
+                    </ul>
+                </li>
+                <li>Google Favicon Service: Used only for displaying website icons in your bookmark list. Only the domain names of bookmarked sites are shared with this service.</li>
+            </ul>
+            
+            <p>No other external services or third-party integrations are used. The extension operates entirely within your Chrome browser, using only the above services which are essential for core bookmark functionality.</p>
+            
+            <div class="emphasis">
+                <p>We do not sell, rent, or share your data with any third parties. Any data transmission to third-party services is limited to what is strictly necessary for the extension's core functionality.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>User Rights and Controls</h2>
+            <p>You maintain full control over your data with the ability to:</p>
+            <ul>
+                <li>Export your complete bookmark data at any time</li>
+                <li>Delete individual bookmarks or all stored data</li>
+                <li>Enable or disable Chrome sync functionality</li>
+                <li>Manage storage permissions through Chrome's settings</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Data Security</h2>
+            <p>We protect your data through:</p>
+            <ul>
+                <li>Local storage encryption via Chrome's built-in security</li>
+                <li>Sync data encryption through Chrome's sync infrastructure</li>
+                <li>Minimal data transmission, limited to essential extension functions</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Data Retention</h2>
+            <p>Data is retained only as long as necessary for providing bookmark functionality:</p>
+            <ul>
+                <li>Local data persists until manually deleted or the extension is uninstalled</li>
+                <li>Sync data remains until removed from Chrome sync or the extension is uninstalled</li>
+                <li>No backup copies are maintained on external servers</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Changes to This Policy</h2>
+            <p>We may update this privacy policy to reflect changes in our practices or for other operational, legal, or regulatory reasons. The current version will always be available through the Chrome Web Store and within the extension.</p>
+        </div>
+
+        <div class="section">
+            <h2>Compliance</h2>
+            <p>AI Bookmark Manager Pro is developed and maintained in compliance with:</p>
+            <ul>
+                <li>Chrome Web Store Developer Program Policies</li>
+                <li>Google's User Data Privacy Policy</li>
+                <li>Applicable data protection regulations</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
